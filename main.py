@@ -18,8 +18,9 @@ def main():
                 self.num_arrows -= 1
                 # print(self.num_arrows)
                 print(f"{target.name} shot {self.name}")
-                self.get_shot()
-            raise ValueError(f"{self.name} can't shoot")
+                target.get_shot()
+            else:
+                raise ValueError(f"{self.name} can't shoot")
 
         # don't touch below this line
 
