@@ -30,6 +30,23 @@ def main():
         def print_status(self):
             print(f"{self.name} has {self.health} health and {self.num_arrows} arrows")
 
+        # Creating example archers
+
+    archer1 = Archer("Robin", 5, 3)
+    archer2 = Archer("Marian", 5, 2)
+
+    # Showing initial status
+    archer1.print_status()
+    archer2.print_status()
+
+    # Shooting simulation
+    archer1.shoot(archer2)  # Robin shoot Marian
+    archer2.shoot(archer1)  # Marian shoot Robin
+
+    # Showing results after shooting
+    archer1.print_status()
+    archer2.print_status()
+
 
 main()
 
